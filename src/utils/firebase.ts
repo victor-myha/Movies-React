@@ -1,11 +1,11 @@
 // Firebase App (the core Firebase SDK) is always required and must be listed first
-import { initializeApp } from 'firebase/app';
 // Add the Firebase products that you want to use
-import { getAuth, GoogleAuthProvider } from '@firebase/auth';
-import { getFirestore } from '@firebase/firestore';
+import { GoogleAuthProvider, getAuth } from '@firebase/auth';
 import { getDatabase } from '@firebase/database';
+import { getFirestore } from '@firebase/firestore';
 import { getStorage } from '@firebase/storage';
 import { getAnalytics } from 'firebase/analytics';
+import { initializeApp } from 'firebase/app';
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,

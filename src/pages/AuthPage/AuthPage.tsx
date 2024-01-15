@@ -26,7 +26,7 @@ const AuthPage: FC<PropsType> = ({ isRegistration = false }) => {
   const onAuth = async (email: string, password: string) => {
     setIsLoading(true);
     try {
-      let user: UserType = isRegistration
+      const user: UserType = isRegistration
         ? await userApi.signUp({ password, email })
         : await userApi.signIn({ password, email });
 

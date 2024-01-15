@@ -1,7 +1,7 @@
 import * as Yup from 'yup';
 
 export const DEV_FLAGS = {
-  IS_AUTH: true,
+  IS_AUTH: false,
 };
 export const MAX_FILE_SIZE = 1000000 * 5;
 

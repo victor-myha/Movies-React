@@ -6,7 +6,7 @@ type PropsT = {
   children: JSX.Element;
 };
 
-export default ({ isSecured = true, children }: PropsT) => {
+export default ({ isSecured = false, children }: PropsT) => {
   const { isAuthorized } = useUser();
 
   if (isSecured && !isAuthorized) return <Navigate to='/sign-in' />;
